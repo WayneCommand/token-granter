@@ -1,0 +1,13 @@
+name = "token-granter"
+main = "src/worker.js"
+compatibility_date = "2024-04-02"
+workers_dev = true
+
+[[routes]]
+# modify this *.github.com
+pattern = "token.grant.github.com"
+zone_name = "github.com"
+custom_domain = true
+
+[vars]
+ms_client_id = "your_client_id"
